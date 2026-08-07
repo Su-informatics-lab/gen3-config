@@ -1,0 +1,941 @@
+[
+  {
+    "tabTitle": "Participants",
+    "charts": {
+      "project_id": {
+        "chartType": "count",
+        "title": "Projects"
+      },
+      "study_id": {
+        "chartType": "count",
+        "title": "Studys"
+      },
+      "gender": {
+        "chartType": "fullPie",
+        "title": "Sex"
+      },
+      "race": {
+        "chartType": "bar",
+        "title": "Race"
+      },
+      "ethnicity": {
+        "chartType": "pie",
+        "title": "Ethnicity"
+      },
+      "study_site": {
+        "chartType": "fullPie",
+        "title": "Clinical Site"
+      },
+      "visit_day_set": {
+        "chartType": "fullPie",
+        "title": "Visits (day)"
+      },
+      "drinking_frequency": {
+        "chartType": "bar",
+        "title": "Drinking Frequency in the past year"
+      },
+      "drinks_per_day": {
+        "chartType": "bar",
+        "title": "Drinks per Day in the past year"
+      },
+      "frequency_of_heavy_drinking": {
+        "chartType": "bar",
+        "title": "Frequency Of Heavy Drinking in the past year"
+      },
+      "aki_status": {
+        "chartType": "fullPie",
+        "title": "AKI Status"
+      },
+      "days_90_survival": {
+        "chartType": "fullPie",
+        "title": "Days 90 Survival"
+      },
+      "days_180_survival": {
+        "chartType": "fullPie",
+        "title": "Days 180 Survival"
+      },
+      "days_90_aki": {
+        "chartType": "pie",
+        "title": "Days 90 AKI"
+      },
+      "days_180_aki": {
+        "chartType": "pie",
+        "title": "Days 180 AKI"
+      }
+    },
+    "filters": {
+      "tabs": [
+        {
+          "title": "Study",
+          "fields": [
+            "project_id",
+            "study_name",
+            "cohort",
+            "actarm"
+          ]
+        },
+        {
+          "title": "Participant",
+          "fields": [
+            "gender",
+            "race",
+            "ethnicity",
+            "study_site"
+          ]
+        },
+        {
+          "title": "Behavior",
+          "fields": [
+            "drinking_frequency",
+            "drinks_per_day",
+            "frequency_of_heavy_drinking"
+          ]
+        },
+        {
+          "title": "Outcome",
+          "fields": [
+            "aki_status",
+            "days_to_aki",
+            "days_90_survival",
+            "days_180_survival",
+            "days_90_aki",
+            "days_180_aki"
+          ]
+        },
+        {
+          "title": "Lab Test",
+          "fields": [
+            "laboratory_test"
+          ]
+        }
+      ]
+    },
+    "table": {
+      "enabled": true,
+      "fields": [
+        "project_id",
+        "pat_id",
+        "visit_day",
+        "visit_day_set",
+        "max_days_to_follow_up_test",
+        "cohort",
+        "study_site",
+        "gender",
+        "race",
+        "actarm",
+        "ethnicity",
+        "marital",
+        "education",
+        "age_at_index",
+        "drinking_frequency",
+        "aki_status",
+        "days_to_aki",
+        "days_90_aki",
+        "days_90_survival",
+        "days_180_aki",
+        "days_180_survival",
+        "days_to_death",
+        "vital_status",
+        "laboratory_test"
+      ]
+    },
+    "dropdowns": {},
+    "buttons": [],
+    "guppyConfig": {
+      "dataType": "case",
+      "nodeCountTitle": "Participants",
+      "fieldMapping": [
+        {
+          "field": "project_id",
+          "name": "Project"
+        },
+        {
+          "field": "pat_id",
+          "name": "Patient Id"
+        },
+        {
+          "field": "visit_day",
+          "name": "Assessment Date"
+        },
+        {
+          "field": "study_site",
+          "name": "Clinical Site"
+        },
+        {
+          "field": "actarm",
+          "name": "Treatment Arm in RCT"
+        },
+        {
+          "field": "age_at_index",
+          "name": "Age"
+        },
+        {
+          "field": "eGFR",
+          "name": "eGFR"
+        },
+        {
+          "field": "gender",
+          "name": "Sex"
+        },
+        {
+          "field": "observational",
+          "name": "Observational"
+        },
+        {
+          "field": "clinical_trial",
+          "name": "Clinical Trial"
+        },
+        {
+          "field": "drinking_frequency",
+          "name": "Drinking frequency in the past year"
+        },
+        {
+          "field": "drinks_per_day",
+          "name": "Drinks per day in the past year"
+        },
+        {
+          "field": "frequency_of_heavy_drinking",
+          "name": "Frequency of heavy drinking in the past year"
+        },
+        {
+          "field": "cohort",
+          "name": "Group in OBS"
+        },
+        {
+          "field": "aki_status",
+          "name": "AKI Status"
+        },
+        {
+          "field": "days_to_aki",
+          "name": "Days to AKI"
+        },
+        {
+          "field": "days_90_aki",
+          "name": "Days 90 AKI"
+        },
+        {
+          "field": "days_180_aki",
+          "name": "Days 180 AKI"
+        }
+      ],
+      "manifestMapping": {
+        "resourceIndexType": "file",
+        "resourceIdField": "object_id",
+        "referenceIdFieldInResourceIndex": "_case_id",
+        "referenceIdFieldInDataIndex": "_case_id"
+      },
+      "accessibleFieldCheckList": [
+        "project_id"
+      ],
+      "accessibleValidationField": "project_id"
+    }
+  },
+  {
+    "tabTitle": "Follow Ups",
+    "charts": {
+      "study_id": {
+        "chartType": "count",
+        "title": "Studys"
+      },
+      "visit_day": {
+        "chartType": "pie",
+        "title": "Visits (day)"
+      },
+      "case_arm": {
+        "chartType": "bar",
+        "title": "Treatment Arm in RCT"
+      },
+      "case_group": {
+        "chartType": "bar",
+        "title": "Group in OBS"
+      },
+      "gender": {
+        "chartType": "fullPie",
+        "title": "Sex"
+      },
+      "race": {
+        "chartType": "bar",
+        "title": "Race"
+      },
+      "ethnicity": {
+        "chartType": "pie",
+        "title": "Ethnicity"
+      },
+      "study_site": {
+        "chartType": "fullPie",
+        "title": "Clinical Site"
+      },
+      "days_90_survival": {
+        "chartType": "fullPie",
+        "title": "Days 90 Survival"
+      },
+      "days_180_survival": {
+        "chartType": "fullPie",
+        "title": "Days 180 Survival"
+      },
+      "days_90_aki": {
+        "chartType": "pie",
+        "title": "Days 90 AKI"
+      },
+      "days_180_aki": {
+        "chartType": "pie",
+        "title": "Days 180 AKI"
+      },
+      "liver_transplant": {
+        "chartType": "pie",
+        "title": "Liver Transplant"
+      },
+      "infection_screen_done": {
+        "chartType": "pie",
+        "title": "Infection Screen Done"
+      }
+    },
+    "filters": {
+      "tabs": [
+        {
+          "title": "Study",
+          "fields": [
+            "project_id",
+            "study_name",
+            "case_group",
+            "case_arm"
+          ]
+        },
+        {
+          "title": "Follow Up",
+          "fields": [
+            "visit_day",
+            "bmi",
+            "child_pugh_score",
+            "lille_score",
+            "maddreys_score",
+            "meld_score"
+          ]
+        },
+        {
+          "title": "Lab Test",
+          "fields": [
+            "laboratory_test"
+          ]
+        },
+        {
+          "title": "Participant",
+          "fields": [
+            "study_site",
+            "gender",
+            "race",
+            "ethnicity"
+          ]
+        },
+        {
+          "title": "Outcome",
+          "fields": [
+            "aki_status",
+            "days_to_aki",
+            "days_90_aki",
+            "days_90_survival",
+            "days_180_aki",
+            "days_180_survival",
+            "liver_transplant",
+            "infection_screen_done"
+          ]
+        }
+      ]
+    },
+    "table": {
+      "enabled": true,
+      "fields": [
+        "project_id",
+        "follow_up_id",
+        "study_name",
+        "pat_id",
+        "visit_day",
+        "bmi",
+        "child_pugh_score",
+        "lille_score",
+        "maddreys_score",
+        "meld_score",
+        "case_arm",
+        "case_group",
+        "tlfb_drinking_days",
+        "tlfb_number_drinks",
+        "liver_transplant",
+        "infection_screen_done"
+      ]
+    },
+    "dropdowns": {},
+    "buttons": [],
+    "guppyConfig": {
+      "dataType": "follow_up",
+      "nodeCountTitle": "Follow_ups",
+      "fieldMapping": [
+        {
+          "field": "pat_id",
+          "name": "Patient Id"
+        },
+        {
+          "field": "visit_day",
+          "name": "Assessment Date"
+        },
+        {
+          "field": "study_site",
+          "name": "Clinical Site"
+        },
+        {
+          "field": "case_arm",
+          "name": "Treatment Arm in RCT"
+        },
+        {
+          "field": "case_group",
+          "name": "Group in OBS"
+        },
+        {
+          "field": "project_id",
+          "name": "Project"
+        },
+        {
+          "field": "visit_day",
+          "name": "Assessment Date"
+        },
+        {
+          "field": "observational",
+          "name": "Observational"
+        },
+        {
+          "field": "clinical_trial",
+          "name": "Clinical Trial"
+        },
+        {
+          "field": "gender",
+          "name": "sex"
+        },
+        {
+          "field": "aki_status",
+          "name": "AKI Status"
+        },
+        {
+          "field": "days_to_aki",
+          "name": "Days to AKI"
+        },
+        {
+          "field": "days_90_aki",
+          "name": "Days 90 AKI"
+        },
+        {
+          "field": "days_180_aki",
+          "name": "Days 180 AKI"
+        }
+      ],
+      "manifestMapping": {
+        "resourceIndexType": "file",
+        "resourceIdField": "object_id",
+        "referenceIdFieldInResourceIndex": "_case_id",
+        "referenceIdFieldInDataIndex": "_case_id"
+      },
+      "accessibleFieldCheckList": [
+        "project_id"
+      ],
+      "accessibleValidationField": "project_id"
+    }
+  },
+  {
+    "tabTitle": "Biospecimens",
+    "charts": {
+      "follow_up_id": {
+        "chartType": "count",
+        "title": "Follow Ups"
+      },
+      "lab_id": {
+        "chartType": "count",
+        "title": "Labs"
+      },
+      "PI_name": {
+        "chartType": "fullPie",
+        "title": "Labs"
+      },
+      "specimen_type": {
+        "chartType": "pie",
+        "title": "Specimen Type"
+      },
+      "case_group": {
+        "chartType": "fullPie",
+        "title": "Group in OBS"
+      },
+      "gender": {
+        "chartType": "fullPie",
+        "title": "Sex"
+      },
+      "race": {
+        "chartType": "bar",
+        "title": "Race"
+      },
+      "ethnicity": {
+        "chartType": "pie",
+        "title": "Ethnicity"
+      },
+      "study_site": {
+        "chartType": "fullPie",
+        "title": "Clinical Site"
+      },
+      "days_90_survival": {
+        "chartType": "fullPie",
+        "title": "Days 90 Survival"
+      },
+      "days_180_survival": {
+        "chartType": "fullPie",
+        "title": "Days 180 Survival"
+      },
+      "days_90_aki": {
+        "chartType": "pie",
+        "title": "Days 90 AKI"
+      },
+      "days_180_aki": {
+        "chartType": "pie",
+        "title": "Days 180 AKI"
+      }
+    },
+    "filters": {
+      "tabs": [
+        {
+          "title": "Biospecimen",
+          "fields": [
+            "specimen_type",
+            "PI_name"
+          ]
+        },
+        {
+          "title": "Study",
+          "fields": [
+            "project_id",
+            "study_name",
+            "case_group",
+            "case_arm"
+          ]
+        },
+        {
+          "title": "Participant",
+          "fields": [
+            "study_site",
+            "gender",
+            "race",
+            "ethnicity"
+          ]
+        },
+        {
+          "title": "Follow Up",
+          "fields": [
+            "visit_day"
+          ]
+        },
+        {
+          "title": "Outcome",
+          "fields": [
+            "aki_status",
+            "days_to_aki",
+            "days_90_aki",
+            "days_90_survival",
+            "days_180_aki",
+            "days_180_survival"
+          ]
+        }
+      ]
+    },
+    "table": {
+      "enabled": true,
+      "fields": [
+        "project_id",
+        "aliquot_id",
+        "follow_up_id",
+        "pat_id",
+        "specimen_type",
+        "visit_day",
+        "aki_status",
+        "lab_name",
+        "PI_name"
+      ]
+    },
+    "dropdowns": {},
+    "buttons": [],
+    "guppyConfig": {
+      "dataType": "aliquot",
+      "nodeCountTitle": "Biospecimens",
+      "fieldMapping": [
+        {
+          "field": "project_id",
+          "name": "Project"
+        },
+        {
+          "field": "pat_id",
+          "name": "Patient Id"
+        },
+        {
+          "field": "visit_day",
+          "name": "Assessment Date"
+        },
+        {
+          "field": "study_site",
+          "name": "Clinical Site"
+        },
+        {
+          "field": "observational",
+          "name": "Observational"
+        },
+        {
+          "field": "clinical_trial",
+          "name": "Clinical Trial"
+        },
+        {
+          "field": "gender",
+          "name": "Sex"
+        },
+        {
+          "field": "case_arm",
+          "name": "Treatment Arm in RCT"
+        },
+        {
+          "field": "case_group",
+          "name": "Group in OBS"
+        },
+        {
+          "field": "PI_name",
+          "name": "Labs"
+        },
+        {
+          "field": "aki_status",
+          "name": "AKI Status"
+        },
+        {
+          "field": "days_to_aki",
+          "name": "Days to AKI"
+        },
+        {
+          "field": "days_90_aki",
+          "name": "Days 90 AKI"
+        },
+        {
+          "field": "days_180_aki",
+          "name": "Days 180 AKI"
+        }
+      ],
+      "manifestMapping": {
+        "resourceIndexType": "file",
+        "resourceIdField": "object_id",
+        "referenceIdFieldInResourceIndex": "_case_id",
+        "referenceIdFieldInDataIndex": "_case_id"
+      },
+      "accessibleFieldCheckList": [
+        "project_id"
+      ],
+      "accessibleValidationField": "project_id"
+    }
+  },
+  {
+    "tabTitle": "Lab Results",
+    "charts": {
+      "project_id": {
+        "chartType": "count",
+        "title": "Projects"
+      },
+      "laboratory_test": {
+        "chartType": "pie",
+        "title": "Laboratory Test"
+      },
+      "gender": {
+        "chartType": "fullPie",
+        "title": "Sex"
+      },
+      "race": {
+        "chartType": "bar",
+        "title": "Race"
+      },
+      "PI_name": {
+        "chartType": "fullPie",
+        "title": "Labs"
+      },
+      "study_site": {
+        "chartType": "fullPie",
+        "title": "Clinical Site"
+      },
+      "ethnicity": {
+        "chartType": "pie",
+        "title": "Ethnicity"
+      },
+      "test_result": {
+        "chartType": "pie",
+        "title": "Test Result"
+      },
+      "days_90_survival": {
+        "chartType": "fullPie",
+        "title": "Days 90 Survival"
+      },
+      "days_180_survival": {
+        "chartType": "fullPie",
+        "title": "Days 180 Survival"
+      },
+      "days_90_aki": {
+        "chartType": "pie",
+        "title": "Days 90 AKI"
+      },
+      "days_180_aki": {
+        "chartType": "pie",
+        "title": "Days 180 AKI"
+      }
+    },
+    "filters": {
+      "tabs": [
+        {
+          "title": "Study",
+          "fields": [
+            "project_id",
+            "study_name",
+            "case_group",
+            "case_arm"
+          ]
+        },
+        {
+          "title": "Lab",
+          "fields": [
+            "PI_name"
+          ]
+        },
+        {
+          "title": "Participant",
+          "fields": [
+            "gender",
+            "race",
+            "ethnicity",
+            "study_site"
+          ]
+        },
+        {
+          "title": "Lab Test",
+          "fields": [
+            "laboratory_test",
+            "test_result"
+          ]
+        },
+        {
+          "title": "Outcome",
+          "fields": [
+            "aki_status",
+            "days_to_aki",
+            "days_90_aki",
+            "days_90_survival",
+            "days_180_aki",
+            "days_180_survival"
+          ]
+        }
+      ]
+    },
+    "table": {
+      "enabled": true,
+      "fields": [
+        "project_id",
+        "molecular_test_id",
+        "study_name",
+        "pat_id",
+        "case_arm",
+        "case_group",
+        "laboratory_test",
+        "test_value",
+        "test_result",
+        "aki_status",
+        "visit_day",
+        "lab_name",
+        "PI_name"
+      ]
+    },
+    "dropdowns": {},
+    "buttons": [],
+    "guppyConfig": {
+      "dataType": "molecular_test",
+      "nodeCountTitle": "Lab Results",
+      "fieldMapping": [
+        {
+          "field": "project_id",
+          "name": "Project"
+        },
+        {
+          "field": "pat_id",
+          "name": "Patient Id"
+        },
+        {
+          "field": "visit_day",
+          "name": "Assessment Date"
+        },
+        {
+          "field": "study_site",
+          "name": "Clinical Site"
+        },
+        {
+          "field": "observational",
+          "name": "Observational"
+        },
+        {
+          "field": "clinical_trial",
+          "name": "Clinical Trial"
+        },
+        {
+          "field": "gender",
+          "name": "sex"
+        },
+        {
+          "field": "case_arm",
+          "name": "Treatment Arm in RCT"
+        },
+        {
+          "field": "case_group",
+          "name": "Group in OBS"
+        },
+        {
+          "field": "PI_name",
+          "name": "Labs"
+        },
+        {
+          "field": "aki_status",
+          "name": "AKI Status"
+        },
+        {
+          "field": "days_to_aki",
+          "name": "Days to AKI"
+        },
+        {
+          "field": "days_90_aki",
+          "name": "Days 90 AKI"
+        },
+        {
+          "field": "days_180_aki",
+          "name": "Days 180 AKI"
+        }
+      ],
+      "manifestMapping": {
+        "resourceIndexType": "file",
+        "resourceIdField": "object_id",
+        "referenceIdFieldInResourceIndex": "_case_id",
+        "referenceIdFieldInDataIndex": "_case_id"
+      },
+      "accessibleFieldCheckList": [
+        "project_id"
+      ],
+      "accessibleValidationField": "project_id"
+    }
+  },
+  {
+    "tabTitle": "Data Files",
+    "charts": {
+      "experimental_strategy": {
+        "chartType": "bar",
+        "title": "Experimental Strategy"
+      },
+      "data_category": {
+        "chartType": "pie",
+        "title": "Data Category"
+      },
+      "data_type": {
+        "chartType": "bar",
+        "title": "Data Type"
+      },
+      "data_format": {
+        "chartType": "pie",
+        "title": "Data Format"
+      }
+    },
+    "filters": {
+      "tabs": [
+        {
+          "title": "Data File",
+          "fields": [
+            "experimental_strategy",
+            "data_category",
+            "data_type",
+            "data_format"
+          ]
+        }
+      ]
+    },
+    "table": {
+      "enabled": true,
+      "fields": [
+        "submitter_id",
+        "file_name",
+        "experimental_strategy",
+        "data_category",
+        "data_type",
+        "data_format"
+      ]
+    },
+    "dropdowns": {
+      "download": {
+        "title": "Download"
+      }
+    },
+    "buttons": [
+      {
+        "enabled": true,
+        "type": "manifest",
+        "title": "Download Manifest",
+        "leftIcon": "datafile",
+        "rightIcon": "download",
+        "fileName": "manifest.json",
+        "dropdownId": "download"
+      },
+      {
+        "enabled": true,
+        "type": "data-json",
+        "title": "Download Metadata (JSON)",
+        "leftIcon": "datafile",
+        "rightIcon": "download",
+        "fileName": "data_files.json",
+        "dropdownId": "download"
+      }
+    ],
+    "guppyConfig": {
+      "dataType": "file",
+      "nodeCountTitle": "File_collections",
+      "fieldMapping": [
+        {
+          "field": "pat_id",
+          "name": "Patient Id"
+        },
+        {
+          "field": "visit_day",
+          "name": "Assessment Date"
+        },
+        {
+          "field": "study_site",
+          "name": "Clinical site"
+        },
+        {
+          "field": "case_arm",
+          "name": "Treatment Arm"
+        },
+        {
+          "field": "project_id",
+          "name": "Project"
+        },
+        {
+          "field": "observational",
+          "name": "Observational"
+        },
+        {
+          "field": "clinical_trial",
+          "name": "Clinical Trial"
+        },
+        {
+          "field": "gender",
+          "name": "sex"
+        }
+      ],
+      "manifestMapping": {
+        "resourceIndexType": "file",
+        "resourceIdField": "object_id",
+        "referenceIdFieldInResourceIndex": "_case_id",
+        "referenceIdFieldInDataIndex": "_case_id"
+      },
+      "accessibleFieldCheckList": [
+        "project_id"
+      ],
+      "accessibleValidationField": "project_id"
+    }
+  }
+]

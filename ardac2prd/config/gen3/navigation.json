@@ -1,0 +1,81 @@
+{
+  "navigation": {
+    "hideUnauthorizedLinks": false,
+    "classNames": {
+      "root": "pl-1 mr-6 bg-base-max text-primary opacity-100 hover:opacity-100 data-disabled:opacity-35 data-disabled:hover:text-primary data-disabled:hover:opacity-35",
+      "item": "py-2 px-4 hover:bg-primary-max hover:text-primary-darkest",
+      "navigationPanel": "bg-base-max text-primary",
+      "icon": "data-disabled:opacity-50"
+    },
+    "logo": {
+      "src": "/icons/ardac.png",
+      "width": 250,
+      "height": 49,
+      "href": "/"
+    },
+    "items": [
+      {
+        "icon": "gen3:dictionary",
+        "href": "/DataDictionary",
+        "name": "Dictionary",
+        "tooltip": {
+          "authorized": "Review the ARDaC data model and field definitions."
+        }
+      },
+      {
+        "icon": "gen3:exploration",
+        "href": "/Explorer",
+        "name": "Exploration",
+        "tooltip": {
+          "authorized": "Filter and explore ARDaC participants, follow ups, biospecimens, lab results, and files."
+        }
+      },
+      {
+        "icon": "gen3:query",
+        "href": "/Query",
+        "name": "Query",
+        "tooltip": {
+          "authorized": "Query ARDaC data using GraphiQL."
+        }
+      },
+      {
+        "icon": "gen3:workspace",
+        "href": "/Workspace",
+        "name": "Workspace",
+        "tooltip": {
+          "authorized": "Launch an authorized analysis workspace."
+        }
+      },
+      {
+        "icon": "gen3:profile",
+        "href": "/Profile",
+        "name": "Profile",
+        "tooltip": {
+          "authorized": "Review access and create API credentials."
+        }
+      },
+      {
+        "icon": "gen3:analysis",
+        "href": "https://new.portal.ardac.org/anagine",
+        "name": "Anagine",
+        "tooltip": {
+          "authorized": "Open the ARDaC Anagine application."
+        }
+      }
+    ]
+  },
+  "topBar": {
+    "items": [
+      {
+        "rightIcon": "gen3:upload",
+        "href": "/Submission",
+        "name": "Submit Data"
+      },
+      {
+        "href": "https://ardac.org/",
+        "name": "Documentation"
+      }
+    ],
+    "loginButtonVisibility": "visible"
+  }
+}

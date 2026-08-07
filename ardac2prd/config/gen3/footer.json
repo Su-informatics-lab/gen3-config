@@ -1,0 +1,23 @@
+{
+  "classNames": {
+    "root": "bg-primary-darkest",
+    "layout": "flex items-center justify-end"
+  },
+  "rightSection": {
+    "columns": [
+      {
+        "rows": [
+          {
+            "Icon": {
+              "logo": "/icons/ardac.png",
+              "width": 250,
+              "height": 49,
+              "description": "AlcHepNet Research Data Commons",
+              "href": "https://alchepnet.org/"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

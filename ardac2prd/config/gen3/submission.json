@@ -1,0 +1,24 @@
+{
+  "projectTable": {
+    "columns": [
+      {
+        "name": "Studies",
+        "field": "_study_count",
+        "errorIfNotAvailable": false,
+        "valueIfNotAvailable": "n/a"
+      },
+      {
+        "name": "Participants",
+        "field": "_case_count",
+        "errorIfNotAvailable": false,
+        "valueIfNotAvailable": "n/a"
+      },
+      {
+        "name": "Follow Ups",
+        "field": "_follow_up_count",
+        "errorIfNotAvailable": false,
+        "valueIfNotAvailable": "n/a"
+      }
+    ]
+  }
+}
