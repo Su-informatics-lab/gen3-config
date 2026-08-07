@@ -45,7 +45,7 @@
       "jupyterhub": {
         "service": "jupyterhub",
         "color": "lime.4",
-        "label": "JuptyerHub"
+        "label": "JupyterHub"
       }
     }
   }
