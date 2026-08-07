@@ -38,7 +38,7 @@
         "title": "",
         "cards": [
           {
-            "icon": "MdOutlineMenuBook",
+            "icon": "FaGraduationCap",
             "bodyText": "Learn how ARDaC data is organized before browsing or submitting data.",
             "btnText": "Define Data Fields",
             "href": "/DataDictionary",
@@ -52,14 +52,14 @@
             "linkType": "portal"
           },
           {
-            "icon": "MdOutlineCode",
+            "icon": "MdOutlineBarChart",
             "bodyText": "Use GraphiQL to query the ARDaC data model directly.",
             "btnText": "Query Data",
             "href": "/Query",
             "linkType": "portal"
           },
           {
-            "icon": "MdOutlineUploadFile",
+            "icon": "MdGroup",
             "bodyText": "Submit data based on the ARDaC Data Dictionary. Submission is limited to authorized users.",
             "btnText": "Submit Data",
             "href": "/Submission",
