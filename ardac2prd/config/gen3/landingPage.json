@@ -20,14 +20,7 @@
             }
           }
         ],
-        "right": [
-          {
-            "image": {
-              "src": "/ff/icons/ardac.png",
-              "alt": "ARDaC: AlcHepNet Research Data Commons"
-            }
-          }
-        ]
+        "right": []
       }
     },
     {
