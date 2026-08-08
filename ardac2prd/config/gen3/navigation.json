@@ -8,7 +8,7 @@
       "icon": "data-disabled:opacity-50"
     },
     "logo": {
-      "src": "/icons/ardac.png",
+      "src": "/ff/icons/ardac.png",
       "width": 250,
       "height": 49,
       "href": "/"
