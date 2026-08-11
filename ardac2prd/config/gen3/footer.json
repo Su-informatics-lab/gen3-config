@@ -3,6 +3,11 @@
     "root": "bg-primary-darkest",
     "layout": "flex items-center justify-end"
   },
+  "dictionaryVersion": {
+    "enabled": true,
+    "label": "Data Dictionary Version",
+    "className": "mr-auto px-2 text-sm text-primary-contrast"
+  },
   "rightSection": {
     "columns": [
       {
