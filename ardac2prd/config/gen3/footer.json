@@ -5,8 +5,8 @@
   },
   "dictionaryVersion": {
     "enabled": true,
-    "label": "Data Dictionary Version",
-    "className": "mr-auto px-2 text-sm text-primary-contrast"
+    "label": "Dictionary",
+    "className": "order-first mr-auto px-2 text-sm text-primary-contrast"
   },
   "rightSection": {
     "columns": [
